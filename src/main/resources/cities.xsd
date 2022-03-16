@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="getCitiesRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="code" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCitiesResponse">
+        <xs:complexType>
+	    	<xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="cities" type="tns:city"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="city">
+        <xs:sequence>
+		    <xs:element name="name" type="xs:string" />
+		    <xs:element name="code" type="xs:int" />
+		</xs:sequence>
+    </xs:complexType>
+</xs:schema>
