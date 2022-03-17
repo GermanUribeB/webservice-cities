@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.epam</groupId>
-	<artifactId>travelers</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>webservice-cities</artifactId>
+	<version>0.0.1</version>
 	<name>travelers</name>
-	<description>Project Travelers for Test Purposes</description>
+	<description>Webservice Cities for Test Purposes</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
