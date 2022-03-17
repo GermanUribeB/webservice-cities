@@ -1,6 +1,6 @@
 FROM openjdk:19-alpine
 
-COPY ./cities-0.0.1-SNAPSHOT.jar /cities-0.0.1-SNAPSHOT.jar
+COPY ./target/webservice-cities-0.0.1.jar /cities-0.0.1-SNAPSHOT.jar
 
 
 EXPOSE 8080
