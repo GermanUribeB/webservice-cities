@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cities-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cities
+  template:
+    metadata:
+      labels:
+        app: cities
+    spec:
+      containers:
+        - name: cities-ws
+          image: alpha3b1/cities-ws:latest
