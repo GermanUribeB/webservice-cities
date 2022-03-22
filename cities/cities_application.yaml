@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://git.epam.com/johnatan_lima/webservice-cities.git
+    repoURL: https://github.com/GermanUribeB/webservice-cities.git
     targetRevision: HEAD
-    path: templates
+    path: cities/templates
   destination: 
     server: https://kubernetes.default.svc
     namespace: travelers
