@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/GermanUribeB/argocd-app-config.git
+    repoURL: https://git.epam.com/johnatan_lima/webservice-cities.git
     targetRevision: HEAD
-    path: dev
+    path: cities/templates
   destination: 
     server: https://kubernetes.default.svc
     namespace: travelers
